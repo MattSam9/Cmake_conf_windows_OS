@@ -16,7 +16,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE INTERNAL "")
 set(CMAKE_CXX_FLAGS_DEBUG_INIT "-Wall -Wextra -pedantic-errors -g3")
 set(CMAKE_CXX_FLAGS_RELEASE_INIT "-Wall -Wextra -pedantic-errors")
 
-# by this command ef define executable name and main file addressthat make those exe file
+# by this command we define executable name (in this case project() value is chosen) that is stl and address that to the file that has main() function 
 add_executable(${PROJECT_NAME} ${CMAKE_SOURCE_DIR}/src/stl.cpp)
 
 # define linker relation between main and other function in other cpp files in libraries (in this case gv.cpp)
